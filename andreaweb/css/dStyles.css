@@ -1,0 +1,141 @@
+:root{
+    --main-bg-color:#7469B6;
+    --main-text-color:#E1AFD1;
+    --second-bg-color:#E1AFD1;
+    --second-text-color:#FFE6E6;
+
+}
+
+.about-image {
+    border-radius: 50%; /* Set border-radius to 50% for a round shape */
+}
+.About {
+    background-color: var(--darkpurp-color); /* Change to purple color */
+}
+  
+.justify-text {
+    text-align: justify;
+}
+.primary-bg{
+    color: var(--main-bg-color);
+}
+.second-bg{
+    color: var(--second-bg-color);
+}
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    
+    background-color: var(--second-bg-color);
+}
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left: -18rem;
+    transition: margin 0.25s ease-out;
+    
+}
+
+#sidebar-wrapper .sidebar-heading{
+    padding: 0.875rem 1.25rem;
+    font-size:1.2rem;
+    
+}
+
+#sidebar-wrapper .list-group{
+    width: 15rem;
+    
+}
+
+#page-content-wrapper{
+    min-width: 100vw;
+    
+    
+}
+
+#wrapper.toggled #sidebar-wrapper{
+    margin-left: 0;
+}
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.list-group-item{
+    border: none;
+    padding:20px 30px;
+    
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+@media (min-width: 576px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -18rem;
+    }
+}
+
+@media (min-width: 768px){
+    #sidebar-wrapper{
+        margin-left: 0;
+    }
+
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper{
+        margin-left: -18rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -18rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -18rem;
+    }
+    
+}
